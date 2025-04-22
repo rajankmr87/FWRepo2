@@ -53,6 +53,7 @@ public class CreateOrganizationTest extends BaseClass{
 
 		Thread.sleep(2000);
 		String actData = driver.findElement(By.xpath("//span[@id='dtlview_Organization Name']")).getText();
+		//above path is not working as on 22-04-25
 
 		if (actData.contains(OrgName)) {
 			System.out.println("Organization name is created");
