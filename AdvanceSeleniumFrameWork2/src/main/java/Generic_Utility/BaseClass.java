@@ -39,8 +39,11 @@ public class BaseClass {
 	public void BC() throws Throwable {
 		
 		File_Utility flib = new File_Utility();
-		String BROWSER = flib.getKeyAndValuePair("Browser");
+//		String BROWSER = flib.getKeyAndValuePair("Browser");
 
+	//Reading Data from cmd/ Jenkins
+		String BROWSER = System.getProperty("browser"); 
+		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {
