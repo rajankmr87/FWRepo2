@@ -1,49 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-21T20:36:10 IST" name="Default suite" finished-at="2025-04-21T20:36:58 IST" duration-ms="47416">
+  <suite started-at="2025-04-22T19:30:30 IST" name="Default suite" finished-at="2025-04-22T19:31:56 IST" duration-ms="86051">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" name="createOrganizationTest" class="organization.CreateOrganizationTest"/>
+      </group> <!-- regressionTest -->
     </groups>
-    <test started-at="2025-04-21T20:36:10 IST" name="Default test" finished-at="2025-04-21T20:36:58 IST" duration-ms="47416">
-      <class name="campaigns.CreateCampaignsTest">
-        <test-method is-config="true" signature="BS()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:10 IST" name="BS" finished-at="2025-04-21T20:36:10 IST" duration-ms="12" status="PASS">
+    <test started-at="2025-04-22T19:30:30 IST" name="Default test" finished-at="2025-04-22T19:31:56 IST" duration-ms="86051">
+      <class name="organization.CreateOrganizationTest">
+        <test-method is-config="true" signature="BS()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:30:30 IST" name="BS" finished-at="2025-04-22T19:30:30 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:11 IST" name="BT" finished-at="2025-04-21T20:36:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BT()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:30:30 IST" name="BT" finished-at="2025-04-22T19:30:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:11 IST" name="BC" finished-at="2025-04-21T20:36:16 IST" duration-ms="4890" status="PASS">
+        <test-method is-config="true" signature="BC()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:30:30 IST" name="BC" finished-at="2025-04-22T19:30:36 IST" duration-ms="5805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:16 IST" name="BM" finished-at="2025-04-21T20:36:20 IST" duration-ms="3951" status="PASS">
+        <test-method is-config="true" signature="BM()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:30:36 IST" name="BM" finished-at="2025-04-22T19:30:49 IST" duration-ms="13053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BM -->
-        <test-method signature="createCampaignsTest()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:20 IST" name="createCampaignsTest" finished-at="2025-04-21T20:36:55 IST" duration-ms="35773" status="PASS">
+        <test-method signature="createOrganizationTest()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:30:49 IST" name="createOrganizationTest" finished-at="2025-04-22T19:31:34 IST" duration-ms="45251" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='dtlview_Organization Name']"}
+  (Session info: MicrosoftEdge=135.0.3179.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [60d58e846b1b5ea7d29b58d6678cadef, findElement {using=xpath, value=//span[@id='dtlview_Organization Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50924}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\Users\Rajan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50924/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60d58e846b1b5ea7d29b58d6678cadef]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='dtlview_Organization Name']"}
+  (Session info: MicrosoftEdge=135.0.3179.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [60d58e846b1b5ea7d29b58d6678cadef, findElement {using=xpath, value=//span[@id='dtlview_Organization Name']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50924}, msedge: {msedgedriverVersion: 135.0.3179.85 (578105711aca..., userDataDir: C:\Users\Rajan\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50924/devtoo..., se:cdpVersion: 135.0.3179.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60d58e846b1b5ea7d29b58d6678cadef
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at organization.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createCampaignsTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:55 IST" name="AM" finished-at="2025-04-21T20:36:58 IST" duration-ms="2276" status="PASS">
+        </test-method> <!-- createOrganizationTest -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:31:34 IST" name="AM" finished-at="2025-04-22T19:31:53 IST" duration-ms="18800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:58 IST" name="AC" finished-at="2025-04-21T20:36:58 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="AC()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:31:53 IST" name="AC" finished-at="2025-04-22T19:31:56 IST" duration-ms="2966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:58 IST" name="AT" finished-at="2025-04-21T20:36:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="AT()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:31:56 IST" name="AT" finished-at="2025-04-22T19:31:56 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:campaigns.CreateCampaignsTest@762ef0ea]" started-at="2025-04-21T20:36:58 IST" name="AS" finished-at="2025-04-21T20:36:58 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="AS()[pri:0, instance:organization.CreateOrganizationTest@5b38c1ec]" started-at="2025-04-22T19:31:56 IST" name="AS" finished-at="2025-04-22T19:31:56 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AS -->
-      </class> <!-- campaigns.CreateCampaignsTest -->
+      </class> <!-- organization.CreateOrganizationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
