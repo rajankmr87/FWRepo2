@@ -39,10 +39,10 @@ public class BaseClass {
 	public void BC() throws Throwable {
 		
 		File_Utility flib = new File_Utility();
-//		String BROWSER = flib.getKeyAndValuePair("Browser");
+		String BROWSER = flib.getKeyAndValuePair("Browser");
 
 	//Reading Data from cmd/ Jenkins
-		String BROWSER = System.getProperty("browser"); 
+//		String BROWSER = System.getProperty("browser"); 
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -68,15 +68,15 @@ public class BaseClass {
 
 		wlib.windowMaximize(driver);
 
-//		String URL = file.getKeyAndValuePair("url");
-//		String USERNAME = file.getKeyAndValuePair("username");
-//		String PASSWORD = file.getKeyAndValuePair("password");
+		String URL = file.getKeyAndValuePair("url");
+		String USERNAME = file.getKeyAndValuePair("username");
+		String PASSWORD = file.getKeyAndValuePair("password");
 
 		//reading url,username,password values from cmd  / JENKINS
-		String URL = System.getProperty("url");
-	    String USERNAME = System.getProperty("username");
-		String PASSWORD = System.getProperty("password");
-		
+//		String URL = System.getProperty("url");
+//	    String USERNAME = System.getProperty("username");
+//		String PASSWORD = System.getProperty("password");
+//		
 		driver.get(URL);
 
 		// Business Logics
